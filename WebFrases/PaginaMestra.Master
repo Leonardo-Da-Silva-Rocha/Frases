@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMestra.master.cs" Inherits="WebFrases.PaginaMestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Back-end frases famosas</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Estilos.css" rel="stylesheet" />
+    <script type="text/javascript" src="JavaScriptFunctions.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/IMAGENS/SISTEMA/topocurso.png" PostBackUrl="~/Default.aspx" CssClass="linkhome" />
+            <nav>
+                <h1>Crie sites ASP.NET (webfomrs) utilizando c#</h1>
+                <asp:HyperLink ID="hlHome" CssClass="linkBotoes" NavigateUrl="~/Default.aspx" runat="server">Home</asp:HyperLink>
+                <asp:HyperLink ID="hlUsuarios" CssClass="linkBotoes" runat="server" NavigateUrl="~/WebUsuario.aspx">Usuários</asp:HyperLink>
+                <asp:HyperLink ID="hlAutor" CssClass="linkBotoes" NavigateUrl="~/WebAutor.aspx" runat="server">Autores</asp:HyperLink>
+                <asp:HyperLink ID="hlFrase" CssClass="linkBotoes" NavigateUrl="~/WebFrase.aspx" runat="server">Frases</asp:HyperLink>
+                <asp:HyperLink ID="hlCategoria" CssClass="linkBotoes" NavigateUrl="~/WebCategoria.aspx" runat="server">Categorias</asp:HyperLink>
+                <asp:HyperLink ID="hlSair" CssClass="linkBotoes" runat="server" NavigateUrl="~/WebLogin.aspx">Sair</asp:HyperLink>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div>
+                    <div id="cxFloatMsg" class="cxFloatMsg" onclick="HideMsg()">
+                        <h2 id="msgTitulo">Msg</h2>
+                        <p id="msgTexto">Msg</p>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Back-end Frases famosas - Site voltado para o administrador do sistema</p>
+        </footer>
+
+        <script>
+            ShowMsg("Vamos aprender", "Exibir uma menssagem utilzando javascript");
+        </script>
+    </form>body>
+</html>

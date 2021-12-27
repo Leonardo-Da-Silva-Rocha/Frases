@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFrases", "WebFrases\WebFrases.csproj", "{FD993CD2-55C1-4D9C-BF5F-5A835A5ABFAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD993CD2-55C1-4D9C-BF5F-5A835A5ABFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD993CD2-55C1-4D9C-BF5F-5A835A5ABFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD993CD2-55C1-4D9C-BF5F-5A835A5ABFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD993CD2-55C1-4D9C-BF5F-5A835A5ABFAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D42B2E5D-8EBE-4815-BCC2-A737712A69F2}
+	EndGlobalSection
+EndGlobal
